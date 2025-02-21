@@ -16,6 +16,9 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
+
+  // service_tuctt5a
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -53,7 +56,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
+          console.error('Error details:', error.text);
 
           showAlert({
             show: true,
